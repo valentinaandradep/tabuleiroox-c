@@ -6,7 +6,8 @@ int main(int argc, char *argv[])
     char tabuleiro[3][3] = {0};
     int por_parametro = 0;
 
-    if (argc > 1) {
+    if (argc > 1) 
+    {
         int resultado = processar(argc, argv, tabuleiro);
         if (resultado == -1) 
         {
