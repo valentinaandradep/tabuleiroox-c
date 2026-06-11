@@ -18,7 +18,8 @@ int main(int argc, char *argv[])
         }
     }
 
-    if (!por_parametro) {
+    if (!por_parametro) 
+    {
         for (int i = 0; i < 3; i++) 
         {
             for (int j = 0; j < 3; j++) 
@@ -33,8 +34,9 @@ int main(int argc, char *argv[])
                     if (validaCaractereTabuleiro(tabuleiro[i][j])) 
                     {
                         valido = 1;
-                    } else {
-                        printf("Caractere inválido\n");
+                    } else 
+                    {
+                        printf("caractere invalido\n");
                     }
                 }
             }
@@ -45,9 +47,9 @@ int main(int argc, char *argv[])
     {
         for (int j = 0; j < 3; j++) 
         {
-            printf("%c", tabuleiro[i][j]);
+            printf("| %c ", tabuleiro[i][j]);
         }
-        printf("\n");
+        printf("|\n");
     }
 
     printf("Criado por: Valentina Andrade");
